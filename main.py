@@ -1,18 +1,27 @@
 import funcoes as f
 
 '''
-Esse programa solicita ao usúario dois números 
-e exibe na tela as quatros operações basicas.
-Exemplo: 5 e 8
-Adição: 5 + 8 = 13
-Subtração: 5 - 8 = -3
-Multiplicação: 5 x 8 = 40
-Divisão: 5 / 8 = 0.625
+Esse programa solicita ao opções de conversão (Celius, Fahrenheit ou Kelvin) e um valor a ser convertido, em seguida exibi na tela o resultado.
 '''
 
-numero1 = int(input('Digite um número: '))
-numero2 = int(input('Digite outro número: '))
-print(f'Adição: {numero1} + {numero2} = {f.adicao(numero1, numero2)}')
-print(f'Subtração: {numero1} - {numero2} = {f.subtracao(numero1, numero2)}')
-print(f'Multiplicação: {numero1} x {numero2} = {f.multiplicacao(numero1, numero2)}')
-print(f'Divisão: {numero1} / {numero2} = {f.divisao(numero1, numero2)}')
+print('1: Celius')
+print('2: Fahrenheit')
+print('3: Kelvin')
+a_ser_convertido = int(input('Digite a ser convertido: '))
+convertido = int(input('Digite para qual vai ser convertido: '))
+temp = float(input('Digite o valor a ser convertido: '))
+if a_ser_convertido == 1 and convertido == 2:
+    resultado = f.celsius_fahrenheit(temp)
+elif a_ser_convertido == 1 and convertido == 3:
+    resultado = f.celsius_kelvin(temp)
+elif a_ser_convertido == 2 and convertido == 1:
+    resultado = f.fahrenheit_celsius(temp)
+elif a_ser_convertido == 2 and convertido == 3:
+    resultado = f.fahrenheit_kelvin(temp)
+elif a_ser_convertido == 3 and convertido == 1:
+    resultado = f.fahrenheit_kelvin(temp)
+elif a_ser_convertido == 3 and convertido == 2: 
+    resultado = f.kelvin_fahrenheit(temp)
+else:
+    resultado = print('Digite valores válidos!')
+print(f'Resultado: {resultado:.2f}')
