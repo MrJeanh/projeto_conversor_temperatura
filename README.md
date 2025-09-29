@@ -46,9 +46,9 @@ Saída esperada (1, 3 e 30):
 
 ## 📚 Aprendizados
 
-- Estruturação de projeto em Python com múltiplos arquivos.\
-- Criação de funções reutilizáveis.\
-- Uso de `input()` e `print()` para interação com o usuário.\
+- Estruturação de projeto em Python com múltiplos arquivos.
+- Criação de funções reutilizáveis.
+- Uso de `input()` e `print()` para interação com o usuário.
 - Aplicação de condicionais (`if/elif/else`) para controle de fluxo.
 
 ---
